@@ -10,7 +10,7 @@ For example,
 
     g++ smaceps.cpp
 
-will produce an executable **./a.exe** than can be executed.
+will produce an **./a.out** file.
 
 **Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
 in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
