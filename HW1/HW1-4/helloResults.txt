@@ -1,0 +1,3 @@
+At first I was getting "hello world from thread 0" four times, followed by "There are 0 threads!" four times.
+After looking over my code I realize I had typos in the declarations for both omp_get_thread_nu and omp_get_num threads.
+After correcting the typos, I got greetings from threads 0, 1, 2, and 3, and lines saying there are 4 threads.
