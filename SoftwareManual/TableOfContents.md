@@ -2,14 +2,14 @@
 
 **Max Epsilon:**
 
-   [Single Precision Max Epsilon](https://github.com/Shichimenchou/blob/master/math4610/HW1/HW1-123/smaceps.md)
+   [Single Precision Max Epsilon](https://github.com/Shichimenchou/math4610/blob/master/HW1/HW1-123/smaceps.md)
    
-   [Double Precision Max Epsilon](https://github.com/Shichimenchou/blob/master/math4610/HW1/HW1-123/dmaceps.md)
+   [Double Precision Max Epsilon](https://github.com/Shichimenchou/math4610/blob/master/HW1/HW1-123/dmaceps.md)
 
 
 **Root Finding:**
 
-   [Quadratic Equation Root Finding](https://github.com/Shichimenchou/blob/master/math4610/HW1/HW1-7/rootFinder.md)
+   [Quadratic Equation Root Finding](https://github.com/Shichimenchou/math4610/blob/master/HW1/HW1-7/rootFinder.md)
 
 
 
