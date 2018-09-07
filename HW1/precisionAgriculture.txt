@@ -1,0 +1,8 @@
+A field I was surprised to find increasingly cares about machine precision is agriculture. At the link below I
+read about a new style of crop management that relies on precise GPS data. In essence, a farm vehicle is equipped
+with a computer, a GPS unit, and a scanning device. Its position is tracked via satellite then corrected on the
+computer for precise accuracy. This allows the vehicle to scan for chemical information from the soil using the
+scanner and map that to precise location data, allowing the vehicle to adjust how much fertilizer, pesticide,
+and seed it uses in each spot for maximum yield.
+
+http://lubbock.tamu.edu/files/2011/10/precisionfarm_1.pdf
