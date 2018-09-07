@@ -1,0 +1,21 @@
+$ mkdir HW1-123
+$ mv *.cpp HW1-123
+$ cd HW1-123
+$ ls
+
+dmaceps.cpp smaceps.cpp
+
+$ g++ -c *.cpp
+$ ls
+
+dmaceps.cpp dmaceps.o smaceps.cpp smaceps.o
+
+$ ar rcv mylib *.o
+
+a - dmaceps.o
+a - smaceps.o
+
+$ ranlib mylib
+$ ls
+
+dmaceps.cpp dmaceps.o mylib smaceps.cpp smaceps.o
