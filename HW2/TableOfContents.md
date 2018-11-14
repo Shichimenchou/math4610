@@ -8,6 +8,10 @@
 
 [Problem 3](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem3)
 
+* [Part 1](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem3/hw2-3a.cpp)
+
+* [Part 2](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem3/hw2-3b.cpp)
+
 [Problem 4](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem4)
 
 [Problem 5](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem5)
