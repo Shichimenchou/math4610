@@ -1,4 +1,8 @@
-[Problem 1]()
+[Problem 1](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem1)
+
+  [Part 1](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem1/hw2-1-abs.cpp)
+  
+  [Part 2](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem1/)
 
 [Problem 2]()
 
