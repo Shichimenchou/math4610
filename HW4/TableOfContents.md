@@ -5,3 +5,5 @@
 [Problem 3](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem3/hw4-3.cpp)
 
 [Problem 4](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem4/hw4-4.cpp)
+
+[Problem 8](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem8/hw4-8.cpp)
