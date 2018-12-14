@@ -58,13 +58,13 @@ The output follows
 		x.push_back(1);
 		x.push_back(1);
 		x.push_back(1);
-		y.push_back(1);	
-		y.push_back(2);
-		y.push_back(3);
-		y.push_back(4);
-		y.push_back(5);	
+		z.push_back(1);	
+		z.push_back(2);
+		z.push_back(3);
+		z.push_back(4);
+		z.push_back(5);	
 
-		cout << dotProd(x, y, 5) << endl;
+		cout << dotProd(x, z, 5) << endl;
 
 		return 0;
 	}
