@@ -23,7 +23,9 @@
 	
 The output follows
 
-    15
+    1 1 1
+    2 2 2
+    3 3 3
 
 **Implementation/Code:** The following is the code for outerProd and the main function to run the method
 
