@@ -70,5 +70,9 @@
    [Kroenecker Product](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem6/KroeProd.md)
    
    [Determinant](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem6/determinant.md)
+   
+**Solving Linear Systems**
+
+   [Guassian Elimination](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem1/GuassianElimination.md)
 
 **Last Modified:** September/2017
