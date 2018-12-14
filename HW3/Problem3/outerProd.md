@@ -8,13 +8,13 @@
 
 **Description/Purpose:** This routine will calculate the outer product of two vectors
 
-**Input:** The inputs are two vector of doubles x and y, and the length of the vector int length
+**Input:** The inputs are two vector of doubles x and y, and the integer lengths of the vectors xlength and ylength
 
 **Output:** This routine returns a double, the outer product of x and y
 
 **Usage/Example:** The following lines of code compute in the main function the outer product of two vectors
 
-	vector<vector<double>> uw = outerProd(u, w, 3);
+	vector<vector<double>> uw = outerProd(u, w, 3, 3);
 	
 	for(size_t i = 0; i < 3; i++)
 	{
@@ -34,14 +34,14 @@ The output follows
   
 	#using namespace std;
 
-   	vector<vector<double>> outerProd(vector<double> x, vector<double> y, int length)
+   	vector<vector<double>> outerProd(vector<double> x, vector<double> y, int xlength, int ylength)
    	{
 		vector<vector<double>> ans;
 		
-		for(int i = 0; i < length; i++)
+		for(int i = 0; i < xlength; i++)
 		{
 		      vector<double> row;
-		      for(int j = 0; j < length; j++)
+		      for(int j = 0; j < ylength; j++)
 		      {
 		      	row.push_back(x[i] * y[i]);
 		      }
@@ -53,7 +53,7 @@ The output follows
 
 	int main()
 	{
-		vector<vector<double>> uw = outerProd(u, w, 3);
+		vector<vector<double>> uw = outerProd(u, w, 3, 3);
 	
 		for(size_t i = 0; i < 3; i++)
 		{
