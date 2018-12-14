@@ -1,6 +1,9 @@
 ﻿Quantum computing uses vectors of two complex numbers as its quantum bits (qubits), and as such, the logic inherent to it is linear algebra. When performing transformation on multiple bits, the Kronecker product is used between the qubits and used between the matrix transformations to make larger transformations.
-	https://math.stackexchange.com/questions/2394972/kronecker-product-and-quantum-computing#2395254
 One method of image restoration involves iteratively using the Kronecker product and Singular Value Decomposition to get a better and better approximation of what the original matrix was.
-	http://ece.uprm.edu/~domingo/teaching/inel6049/Kamm-Nagy_KP_Image_Restoration.pdf
 As for a fun application, the Kronecker product can be used to make art! By taking the Kronecker product of a matrix representing color with itself n times, you product a fractal pattern n “deep.”
-	https://www.codeproject.com/Articles/1189288/Generating-Kronecker-Product-Based-Fractals
+
+Voevudko E. "Generating Kronecker Product Based Fractals." CodeProject, 30 May 2017, https://www.codeproject.com/Articles/1189288/Generating-Kronecker-Product-Based-Fractals: Accessed December 14 2018.
+
+Julie Kamm and James Nagy. "Kronecker product and SVD approximations in image restoration." Linear Algebra and its Applications (284). 1998(177-192). http://ece.uprm.edu/~domingo/teaching/inel6049/Kamm-Nagy_KP_Image_Restoration.pdf	
+
+Kroenecker product and quantum computing. Stack Overflow: https://math.stackexchange.com/questions/2394972/kronecker-product-and-quantum-computing#2395254 Accessed 14 December 2018.
