@@ -46,55 +46,55 @@ The output follows
 
 **Implementation/Code:** The following is the code for matAdd and the main function to run the method
 
-  #include <iostream>
-  #include <vector>
+	  #include <iostream>
+	  #include <vector>
 
-  using namespace std;
+	  using namespace std;
 
-  vector<vector<double>> matAdd(vector<vector<double>> A, vector<vector<double>> B, int n, int m)
-  {
-    vector<vector<double>> ans;
+	  vector<vector<double>> matAdd(vector<vector<double>> A, vector<vector<double>> B, int n, int m)
+	  {
+	    vector<vector<double>> ans;
 
-    for(int i = 0; i < n; i++)
-    {
-      vector<double> row;
-      for(int j = 0; j < m; j++)
-      {
-        row.push_back(A[i][j] + B[i][j]);
-      }
-      ans.push_back(row);
-    }
+	    for(int i = 0; i < n; i++)
+	    {
+	      vector<double> row;
+	      for(int j = 0; j < m; j++)
+	      {
+		row.push_back(A[i][j] + B[i][j]);
+	      }
+	      ans.push_back(row);
+	    }
 
-    return ans;
-  }
-  
-  int main()
-  {
-    vector<vector<double>> A;
+	    return ans;
+	  }
 
-    for(int i = 0; i < 3; i++)
-    {
-      vector<double> row;
-      for(int j = 0; j < 3; j++)
-      {
-        row.push_back(i + 1);
-      }
-      A.push_back(row);
-    }
+	  int main()
+	  {
+	    vector<vector<double>> A;
 
-    vector<vector<double>> AplusB = matAdd(A, A, 3, 3);
+	    for(int i = 0; i < 3; i++)
+	    {
+	      vector<double> row;
+	      for(int j = 0; j < 3; j++)
+	      {
+		row.push_back(i + 1);
+	      }
+	      A.push_back(row);
+	    }
 
-    for(int i = 0; i < 3; i++)
-    {
-      for(int j = 0; j < 3; j++)
-      {
-        cout << AplusB[i][j] << " ";
-      }
-      cout << endl;
-    }
-    cout << endl;
+	    vector<vector<double>> AplusB = matAdd(A, A, 3, 3);
 
-    return 0;
-  }
+	    for(int i = 0; i < 3; i++)
+	    {
+	      for(int j = 0; j < 3; j++)
+	      {
+		cout << AplusB[i][j] << " ";
+	      }
+	      cout << endl;
+	    }
+	    cout << endl;
+
+	    return 0;
+	  }
 
 **Last Modified: December 2018**
