@@ -22,11 +22,11 @@
     x.push_back(1);
     x.push_back(1);	
 
-    cout << vecMul(x, y, 5)[0] << endl;
-    cout << vecMul(x, y, 5)[1] << endl;
-    cout << vecMul(x, y, 5)[2] << endl;
-    cout << vecMul(x, y, 5)[3] << endl;
-    cout << vecMul(x, y, 5)[4] << endl;
+    cout << vecScalMul(x, y, 5)[0] << endl;
+    cout << vecScalMul(x, y, 5)[1] << endl;
+    cout << vecScalMul(x, y, 5)[2] << endl;
+    cout << vecScalMul(x, y, 5)[3] << endl;
+    cout << vecScalMul(x, y, 5)[4] << endl;
 	
 The output follows
 
@@ -59,23 +59,18 @@ The output follows
 	  int main()
 	  {
 	    vector<double> x;
-	    vector<double> y;	
+	    double y = 5.0;
 	    x.push_back(1);
 	    x.push_back(1);
 	    x.push_back(1);
 	    x.push_back(1);
 	    x.push_back(1);	
-	    y.push_back(1);
-	    y.push_back(1);
-	    y.push_back(1);
-	    y.push_back(1);
-	    y.push_back(1);
 
-	    cout << vecSub(x, y, 5)[0] << endl;
-	    cout << vecSub(x, y, 5)[1] << endl;
-	    cout << vecSub(x, y, 5)[2] << endl;
-	    cout << vecSub(x, y, 5)[3] << endl;
-	    cout << vecSub(x, y, 5)[4] << endl;
+	    cout << vecScalMul(x, y, 5)[0] << endl;
+	    cout << vecScalMul(x, y, 5)[1] << endl;
+	    cout << vecScalMul(x, y, 5)[2] << endl;
+	    cout << vecScalMul(x, y, 5)[3] << endl;
+	    cout << vecScalMul(x, y, 5)[4] << endl;
 
 	    return 0;
 	  }
