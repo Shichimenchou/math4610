@@ -33,7 +33,7 @@ The output follows
 
     15
 
-**Implementation/Code:** The following is the code for vecMul and the main function to run the method
+**Implementation/Code:** The following is the code for dotProd and the main function to run the method
 
 	#include <iostream>
 	#include <vector>
