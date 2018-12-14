@@ -64,5 +64,11 @@
    [Matrix Vector Multiplicaiton](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/matVecMul.md)
    
    [Matrix Matrix Multiplication](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/matMul.md)
+   
+   [Matrix Outer Product](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem6/matOutProd.md)
+   
+   [Kroenecker Product](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem6/KroeProd.md)
+   
+   [Determinant](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem6/determinant.md)
 
 **Last Modified:** September/2017
