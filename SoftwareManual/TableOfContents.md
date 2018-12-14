@@ -76,5 +76,9 @@
    [Square Guassian Elimination](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem1/GuassianElimination.md)
    
    [General Guassian Elimination](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem2/GeneralGuassianElimination.md)
+   
+   [Forward Substitution](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem3/forwardSub.md)
+   
+   [Back Substitution](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem4/backSub.md)
 
-**Last Modified:** September/2017
+**Last Modified:** December/2018
