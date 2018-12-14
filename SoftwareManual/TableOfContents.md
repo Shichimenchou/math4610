@@ -31,7 +31,17 @@
 
    [Vector Infinity Norm Relative Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/relErrInf.md)
 
+**Vector Operations**
 
+   [Vector Add](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/vecAdd.md)
+   
+   [Vector Subtract](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/vecSub.md)
+   
+   [Vector-Scalar Multiply](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/vecScalProd.md)
+   
+   [Dot Product](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/dotProd.md)
+   
+   [Outer Product](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/outerProd.md)
 
 
 **Last Modified:** September/2017
