@@ -45,54 +45,55 @@ The output follows
     0 0 0
 
 **Implementation/Code:** The following is the code for matSub and the main function to run the method
-#include <iostream>
-#include <vector>
 
-using namespace std;
+	#include <iostream>
+	#include <vector>
 
-vector<vector<double>> matSub(vector<vector<double>> A, vector<vector<double>> B, int n, int m)
-{
-	vector<vector<double>> ans;
+	using namespace std;
 
-	for(int i = 0; i < n; i++)
+	vector<vector<double>> matSub(vector<vector<double>> A, vector<vector<double>> B, int n, int m)
 	{
-		vector<double> row;
-		for(int j = 0; j < m; j++)
+		vector<vector<double>> ans;
+
+		for(int i = 0; i < n; i++)
 		{
-			row.push_back(A[i][j] - B[i][j]);
+			vector<double> row;
+			for(int j = 0; j < m; j++)
+			{
+				row.push_back(A[i][j] - B[i][j]);
+			}
+			ans.push_back(row);
 		}
-		ans.push_back(row);
+
+		return ans;
 	}
 
-	return ans;
-}
+	int main()
+	{
+		vector<vector<double>> A;
+	
+		for(int i = 0; i < 3; i++)
+		{
+			vector<double> row;
+			for(int j = 0; j < 3; j++)
+			{
+				row.push_back(i + 1);
+			}
+			A.push_back(row);
+		}
 
-int main()
-{
-	vector<vector<double>> A;
-	
-	for(int i = 0; i < 3; i++)
-	{
-		vector<double> row;
-		for(int j = 0; j < 3; j++)
+		vector<vector<double>> AminusB = matSub(A, A, 3, 3);
+
+		for(int i = 0; i < 3; i++)
 		{
-			row.push_back(i + 1);
+			for(int j = 0; j < 3; j++)
+			{
+				cout << AminusB[i][j] << " ";
+			}
+			cout << endl;
 		}
-		A.push_back(row);
+
+		return 0;
 	}
-	
-	vector<vector<double>> AminusB = matSub(A, A, 3, 3);
-	
-	for(int i = 0; i < 3; i++)
-	{
-		for(int j = 0; j < 3; j++)
-		{
-			cout << AminusB[i][j] << " ";
-		}
-		cout << endl;
-	}
-  
-	return 0;
-}
 
 **Last Modified: December 2018**
