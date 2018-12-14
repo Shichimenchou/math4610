@@ -1,6 +1,6 @@
 # Math 4610 Fundamentals of Computational Mathematics Software Manual
 
-**Routine Name:**           froNormMat
+**Routine Name:**           frobNormMat
 
 **Author:** Phillip Linson
 
