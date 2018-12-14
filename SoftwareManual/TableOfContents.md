@@ -25,7 +25,7 @@
  
    [Vector 2 Norm Absolute Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/absErr2.md)
 
-   [Vector 1 Norm Relative Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/relErr2.md)
+   [Vector 2 Norm Relative Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/relErr2.md)
  
    [Vector Infinity Norm Absolute Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/absErrInf.md)
 
