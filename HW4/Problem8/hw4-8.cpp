@@ -67,6 +67,29 @@ int main()
 		}
 		cout << endl;
 	}
+	cout << endl;
 
+	vector<vector<double>> B;
+	for(int i = 0; i < 5; i++)
+	{
+		vector<double> row;
+		for(int j = 0; j < 5; j++)
+		{
+			row.push_back(1.0/(i + j + 1.0));
+		}
+		B.push_back(row);
+	}
+
+	vector<vector<double>> L2 = CholeskyFactor(B, 5);
+	
+	for(int i = 0; i < 5; i++)
+	{
+		for(int j = 0; j < 5; j++)
+		{
+			cout << L2[i][j] << " ";
+		}
+		cout << endl;
+	}
+	
 	return 0;
 }
