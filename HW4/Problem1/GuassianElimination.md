@@ -74,7 +74,37 @@ This is the correct solution
           }
         }
       }
-
+	bool flag = false;
+	bool cumulativeFlag = true;
+	for(int i = 0; i < n; i++)
+	{
+		flag = false;
+		if(x[i] != 0)
+		{
+			for(int j = 0; j < m; j++)
+			{
+				if(A[i][j] != 0)
+				{
+					flag = true;
+					break;
+				}
+			}
+			cumulativeFlag *= flag;
+		}
+		if(!cumulativeFlag)
+		{
+			break;
+		}
+	}
+	if(!cumulativeFlag)
+	{
+		vector<double> error;
+		for(int i = 0; i < m; i++)
+		{
+			error.push_back(-1000000.0);
+		}
+		return error;
+	}
       return x;
     }
 
