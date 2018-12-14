@@ -27,7 +27,7 @@
       vector<double> x;
       x.push_back(9);x.push_back(1);x.push_back(35);
 
-      x = GuassianElimination(A, x, 3, 4);
+      x = GeneralGuassianElimination(A, x, 3, 4);
 
       for(int i = 0; i < 3; i++)
       {
@@ -40,7 +40,7 @@ The output of running this code is below:
 	
 This is the correct solution
 
-**Implementation/Code:** The following is the code for GuassianElimation and the main function which tests it
+**Implementation/Code:** The following is the code for GeneralGuassianElimation and the main function which tests it
 
     #include <iostream>
     #include <vector>
@@ -48,7 +48,7 @@ This is the correct solution
 
     using namespace std;
 
-    vector<double> GuassianElimination(vector<vector<double>> A, vector<double> x, int n, int m)
+    vector<double> GeneralGuassianElimination(vector<vector<double>> A, vector<double> x, int n, int m)
     {
       double val = 0;
       for (int i = 0; i < min(n, m); i++)
@@ -127,7 +127,7 @@ This is the correct solution
       vector<double> x;
       x.push_back(9);x.push_back(1);x.push_back(35);
 
-      x = GuassianElimination(A, x, 3, 4);
+      x = GeneralGuassianElimination(A, x, 3, 4);
 
       for(int i = 0; i < 3; i++)
       {
