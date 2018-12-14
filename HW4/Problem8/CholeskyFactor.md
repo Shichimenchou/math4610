@@ -6,103 +6,168 @@
 
 **Language:** C++. The code can be compiled using g++.
 
-**Description/Purpose:** This routine will use back substitution to find x for the system Ax = b, where A is upper-triangular
+**Description/Purpose:** This routine will use the Cholesky Factorization to find L such that M = LL^T
 
-**Input:** The inputs are a vector of vector of doubles A, a vector of doubles b, and the dimension of A, n
+**Input:** The inputs are a vector of vector of doubles M, and the dimension of M, n
 
-**Output:** This routine returns a vector of doubles, the solution x to the system Ax = b
+**Output:** This routine returns a vector of vector of doubles, the matrix L
 
-**Usage/Example:** This code from the main function creates an example A and b and prints the solution x
+**Usage/Example:** This code from the main function creates two symmetric positive-definite matrices and runs CholeskyFactor on them
 
-      vector<vector<double>> A;
-      vector<double> row1;vector<double> row2;vector<double> row3; vector<double> row4;
-      row1.push_back(4);row1.push_back(-1);row1.push_back(2);row1.push_back(3);		
-      row2.push_back(0);row2.push_back(-2);row2.push_back(7);row2.push_back(-4);	
-      row3.push_back(0);row3.push_back(0);row3.push_back(6);row3.push_back(5);	
-      row4.push_back(0);row4.push_back(0);row4.push_back(0);row4.push_back(3);
-      A.push_back(row1);A.push_back(row2);A.push_back(row3);A.push_back(row4);
+            vector<vector<double>> A;
+            vector<double> row1;vector<double> row2;vector<double> row3;
+            row1.push_back(4);row1.push_back(12);row1.push_back(-16);
+            row2.push_back(12);row2.push_back(37);row2.push_back(-43);
+            row3.push_back(-16);row3.push_back(-43);row3.push_back(98);
+            A.push_back(row1);A.push_back(row2);A.push_back(row3);
 
-      vector<double> b;
-      b.push_back(20);b.push_back(-7);b.push_back(4);b.push_back(6);
+            vector<vector<double>> L = CholeskyFactor(A, 3);
 
-      vector<double> x = backSub(A, b, 4);
+            for(int i = 0; i < 3; i++)
+            {
+                  for(int j = 0; j < 3; j++)
+                  {
+                        cout << L[i][j] << " ";
+                  }
+                  cout << endl;
+            }
+            cout << endl;
 
-      for(int i = 0; i < 4; i++)
-      {
-        cout << x[i] << " "; 
+            vector<vector<double>> B;
+            for(int i = 0; i < 5; i++)
+            {
+                  vector<double> row;
+                  for(int j = 0; j < 5; j++)
+                  {
+                        row.push_back(1.0/(i + j + 1.0));
+                  }
+                  B.push_back(row);
+            }
+
+            vector<vector<double>> L2 = CholeskyFactor(B, 5);
+
+            for(int i = 0; i < 5; i++)
+            {
+                  for(int j = 0; j < 5; j++)
+                  {
+                        cout << L2[i][j] << " ";
+                  }
+                  cout << endl;
+            }
+
+            return 0;
       }
       
 The output follows
 
-    3 -4 -1 2
+    2 0 0 
+    6 1 0
+    -8 5 3
     
-This solution is correct
+    1 0 0 0 0
+    0.5 0.2888675 0 0 0
+    0.333333 0.2888675 0.0745356 0 0
+    0.25 0.259808 0.111803 0.01888982 0
+    0.2 0.23094 0.127775 0.0377964 0.0047619
+    
+Taking the tranpose of these matrices and multiplying them with their pair gives the exact matrix M in the first case, and a good approximation in the second case
  
-**Implementation/Code:** The following is the code for backSub and the main function to run the method
+**Implementation/Code:** The following is the code for CholeskyFactor and the main function to run the method
 
-    #include <iostream>
-    #include <vector>
-    #include <algorithm>
+      #include <iostream>
+      #include <vector>
+      #include <math.h>
 
-    using namespace std;
+      using namespace std;
 
-    vector<double> backSub(vector<vector<double>> A, vector<double> b, int n)
-    {
-      bool flag = false;
-      for(int i = 0; i < n; i++)
+      vector<vector<double>> CholeskyFactor(vector<vector<double>> M, int n)
       {
-        if(A[i][i] == 0)
-        {
-          flag = true;
-          break;
-        }
-      }
-      if(flag)
-      {
-        vector<double> error;
-        for(int i = 0; i < n; i++)
-        {
-          error.push_back(-1000000.0);
-        }
-        return error;
-      }
-      vector<double> soln;
-      double sum;
-      for(int i = n-1; i >= 0; i--)
-      {
-        sum = 0.0;
-        for(int j = n-1; j > i; j--)
-        {
-          sum += soln[n - j - 1] * A[i][j];
-        }
-        soln.push_back((b[i] - sum) / A[i][i]);
-      }
+            vector<vector<double>> L;
+            double sum = 0.0;
 
-      reverse(soln.begin(), soln.end());
-      return soln;
-    }
+            for(int i = 0; i < n; i++)
+            {
+                  vector<double> row;
+                  for(int j = 0; j < n; j++)
+                  {
+                        row.push_back(0.0);
+                  }
+                  L.push_back(row);
+            }
 
-    int main()
-    {
-      vector<vector<double>> A;
-      vector<double> row1;vector<double> row2;vector<double> row3; vector<double> row4;
-      row1.push_back(4);row1.push_back(-1);row1.push_back(2);row1.push_back(3);		
-      row2.push_back(0);row2.push_back(-2);row2.push_back(7);row2.push_back(-4);	
-      row3.push_back(0);row3.push_back(0);row3.push_back(6);row3.push_back(5);	
-      row4.push_back(0);row4.push_back(0);row4.push_back(0);row4.push_back(3);
-      A.push_back(row1);A.push_back(row2);A.push_back(row3);A.push_back(row4);
+            for(int i = 0; i < n; i++)
+            {
+                  for(int j = 0; j < n; j++)
+                  {
+                        sum = 0.0;
+                        if(i == j)
+                        {
+                              sum += M[i][j];
+                              for(int k = 0; k < j; k++)
+                              {
+                                    sum -= L[j][k] * L[j][k];
+                              }
+                              L[i][j] = sqrt(sum);
+                        }
+                        else if(j < i)
+                        {
+                              sum += M[i][j];
+                              for(int k = 0; k < j; k++)
+                              {
+                                    sum -= L[i][k] * L[j][k];
+                              }
+                              L[i][j] = sum / L[j][j];
+                        }
+                  }
+            }
 
-      vector<double> b;
-      b.push_back(20);b.push_back(-7);b.push_back(4);b.push_back(6);
-
-      vector<double> x = backSub(A, b, 4);
-
-      for(int i = 0; i < 4; i++)
-      {
-        cout << x[i] << " "; 
+            return L;
       }
 
-      return 0;
-    }
+      int main()
+      {
+            vector<vector<double>> A;
+            vector<double> row1;vector<double> row2;vector<double> row3;
+            row1.push_back(4);row1.push_back(12);row1.push_back(-16);
+            row2.push_back(12);row2.push_back(37);row2.push_back(-43);
+            row3.push_back(-16);row3.push_back(-43);row3.push_back(98);
+            A.push_back(row1);A.push_back(row2);A.push_back(row3);
+
+            vector<vector<double>> L = CholeskyFactor(A, 3);
+
+            for(int i = 0; i < 3; i++)
+            {
+                  for(int j = 0; j < 3; j++)
+                  {
+                        cout << L[i][j] << " ";
+                  }
+                  cout << endl;
+            }
+            cout << endl;
+
+            vector<vector<double>> B;
+            for(int i = 0; i < 5; i++)
+            {
+                  vector<double> row;
+                  for(int j = 0; j < 5; j++)
+                  {
+                        row.push_back(1.0/(i + j + 1.0));
+                  }
+                  B.push_back(row);
+            }
+
+            vector<vector<double>> L2 = CholeskyFactor(B, 5);
+
+            for(int i = 0; i < 5; i++)
+            {
+                  for(int j = 0; j < 5; j++)
+                  {
+                        cout << L2[i][j] << " ";
+                  }
+                  cout << endl;
+            }
+
+            return 0;
+      }
 
 **Last Modified: December 2018**
