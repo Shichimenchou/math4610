@@ -59,50 +59,6 @@ The output follows
 		return sum;
 	}
 
-	double infNormMat(vector<vector<double>> A, int n, int m)
-	{
-		double ans = 0.0;
-		double rowSum = 0.0;
-
-		for(int i = 0; i < n; i++)
-		{
-			rowSum = 0.0;
-			for(int j = 0; j < m; j++)
-			{
-				rowSum += A[i][j];
-			}
-
-			if(rowSum > ans)
-			{
-				ans = rowSum;
-			}
-		}
-
-		return ans;
-	}
-
-	double oneNormMat(vector<vector<double>> A, int n, int m)
-	{
-		double ans = 0.0;
-		double colSum = 0.0;
-
-		for(int i = 0; i < m; i++)
-		{
-			colSum = 0.0;
-			for(int j = 0; j < n; j++)
-			{
-				colSum += A[j][i];
-			}
-
-			if(colSum > ans)
-			{
-				ans = colSum;
-			}
-		}
-
-		return ans;
-	}
-
 	int main()
 	{
 		vector<vector<double>> A;
