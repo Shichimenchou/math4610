@@ -34,7 +34,6 @@ The output follows
   
 	#using namespace std;
 
-
    	vector<vector<double>> outerProd(vector<double> x, vector<double> y, int length)
    	{
 		vector<vector<double>> ans;
