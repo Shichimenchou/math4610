@@ -14,24 +14,26 @@
 
 **Usage/Example:** The following lines of code compute in the main function output the values of the entries in the new vector
 
-    vector<double> x;
-    vector<double> y;	
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);	
-    y.push_back(1);
-    y.push_back(1);
-    y.push_back(1);
-    y.push_back(1);
-    y.push_back(1);
-
-    cout << vecAdd(x, y, 5)[0] << endl;
-    cout << vecAdd(x, y, 5)[1] << endl;
-    cout << vecAdd(x, y, 5)[2] << endl;
-    cout << vecAdd(x, y, 5)[3] << endl;
-    cout << vecAdd(x, y, 5)[4] << endl;
+	vector<double> x;
+	vector<double> y;	
+	x.push_back(1);
+	x.push_back(1);
+	x.push_back(1);
+	x.push_back(1);
+	x.push_back(1);	
+	y.push_back(1);
+	y.push_back(1);
+	y.push_back(1);
+	y.push_back(1);
+	y.push_back(1);
+	
+	vector<double> xy = vecAdd(x, y, 5);
+	
+	for(int i = 0; i < 5; i++)
+	{
+		cout << xy[i] << " ";
+	}
+	cout << endl;
 	
 The output follows
 
@@ -62,24 +64,26 @@ The output follows
 
 	  int main()
 	  {
-	    vector<double> x;
-	    vector<double> y;	
-	    x.push_back(1);
-	    x.push_back(1);
-	    x.push_back(1);
-	    x.push_back(1);
-	    x.push_back(1);	
-	    y.push_back(1);
-	    y.push_back(1);
-	    y.push_back(1);
-	    y.push_back(1);
-	    y.push_back(1);
-
-	    cout << vecAdd(x, y, 5)[0] << endl;
-	    cout << vecAdd(x, y, 5)[1] << endl;
-	    cout << vecAdd(x, y, 5)[2] << endl;
-	    cout << vecAdd(x, y, 5)[3] << endl;
-	    cout << vecAdd(x, y, 5)[4] << endl;
+		vector<double> x;
+		vector<double> y;	
+		x.push_back(1);
+		x.push_back(1);
+		x.push_back(1);
+		x.push_back(1);
+		x.push_back(1);	
+		y.push_back(1);
+		y.push_back(1);
+		y.push_back(1);
+		y.push_back(1);
+		y.push_back(1);
+	
+		vector<double> xy = vecAdd(x, y, 5);
+	
+		for(int i = 0; i < 5; i++)
+		{
+			cout << xy[i] << " ";
+		}
+		cout << endl;
 
 	    return 0;
 	  }
