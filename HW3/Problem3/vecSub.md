@@ -36,52 +36,52 @@
 The output follows
 
 	0
-  0
-  0
-  0
-  0
+  	0
+  	0
+  	0
+  	0
 
 **Implementation/Code:** The following is the code for vecSub and the main function to run the method
 
-  #include <iostream>
-  #include <vector>
+	  #include <iostream>
+	  #include <vector>
 
-  using namespace std;
+	  using namespace std;
 
-  vector<double> vecSub(vector<double> x, vector<double> y, int length)
-  {
-    vector<double> xy;
+	  vector<double> vecSub(vector<double> x, vector<double> y, int length)
+	  {
+	    vector<double> xy;
 
-    for(int i = 0; i < length; i++)
-    {
-      xy.push_back(x[i] - y[i]);
-    }
+	    for(int i = 0; i < length; i++)
+	    {
+	      xy.push_back(x[i] - y[i]);
+	    }
 
-    return xy;
-  }
+	    return xy;
+	  }
 
-  int main()
-  {
-    vector<double> x;
-    vector<double> y;	
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);	
-    y.push_back(1);
-    y.push_back(1);
-    y.push_back(1);
-    y.push_back(1);
-    y.push_back(1);
+	  int main()
+	  {
+	    vector<double> x;
+	    vector<double> y;	
+	    x.push_back(1);
+	    x.push_back(1);
+	    x.push_back(1);
+	    x.push_back(1);
+	    x.push_back(1);	
+	    y.push_back(1);
+	    y.push_back(1);
+	    y.push_back(1);
+	    y.push_back(1);
+	    y.push_back(1);
 
-    cout << vecSub(x, y, 5)[0] << endl;
-    cout << vecSub(x, y, 5)[1] << endl;
-    cout << vecSub(x, y, 5)[2] << endl;
-    cout << vecSub(x, y, 5)[3] << endl;
-    cout << vecSub(x, y, 5)[4] << endl;
+	    cout << vecSub(x, y, 5)[0] << endl;
+	    cout << vecSub(x, y, 5)[1] << endl;
+	    cout << vecSub(x, y, 5)[2] << endl;
+	    cout << vecSub(x, y, 5)[3] << endl;
+	    cout << vecSub(x, y, 5)[4] << endl;
 
-    return 0;
-  }
+	    return 0;
+	  }
 
 **Last Modified: December 2018**
