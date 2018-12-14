@@ -1,6 +1,6 @@
 # Math 4610 Fundamentals of Computational Mathematics Software Manual
 
-**Routine Name:**           smaceps
+**Routine Name:**           hw2-1-abs
 
 **Author:** Phillip Linson
 
@@ -8,105 +8,52 @@
 
 For example,
 
-    g++ smaceps.cpp
+    g++ hw2-1-abs.cpp
 
 will produce an **./a.out** file.
 
-**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
-in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
-usually will need to be run one time for each computer.
+**Description/Purpose:** This routine will compute the single absolute error between two numbers.
 
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
+**Input:** The inputs, in order, are two doubles, the actual value and the approximation.
 
-**Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
-computer being queried.
+**Output:** This routine returns a double value: the absolute error between the actual and the approximation.
 
 **Usage/Example:**
 
-The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be
-represented. The first argument is a single precision value (float) and the second is an integer. The new values for these
-variables is then printed using cout.
+This main code asks for an actual value and an approximation, then returns the absolute error. For instance, type 10.0 and 8.8 when prompted
 
-      smaceps(sval, ipow);
-      cout << ipow << " " << sval << endl;
+    Enter the actual value: 10.0
+    Enter the approximation: 8.8
+    
+This will yield the following output
 
-Output from the lines above:
-
-      24 5.96046e-08
-
-The first value (24) is the number of binary digits that define the machine epsilon and the second is related to the
-decimal version of the same value. The number of decimal digits that can be represented is roughly eight (e-08 on the
-end of the second value).
+    The absolute error is: 1.2
 
 **Implementation/Code:** The following is the code for smaceps()
 
-      #include <iostream>
-      #include <cmath>
+    #include <iostream>
+    #include <cmath>
 
-      using namespace std;
+    using namespace std;
 
-      /*
-        single precision max epsilon function
-        -------------------------------------
-      */
-      void smaceps(float& seps, int& ipow)
-      {
-      /*
-        set up storage for the algorithm
-        --------------------------------
-      */
-        float one, appone;
+    double absoluteError(double actual, double approximation)
+    {
+	    return abs(actual - approximation);
+    }
 
-      /*
-        initialize variables to compute the machine value near 1.0
-        ----------------------------------------------------------
-      */
-        one = 1.0;
-        seps = 1.0;
-        appone = one + seps;
+    int main()
+    {
+	    double actual;
+	    cout << "Enter the actual value: ";
+	    cin >> actual;
 
-      /*
-        loop, dividing by 2 each time to determine when the difference
-        between one and the approximation is zero in single precision
-        -------------------------------------------------------------
-      */
-        ipow = 0;
-        for(int i = 0; i < 1000; i++)
-        {
-          ipow++;
+	    double approximation;
+	    cout << "Enter the approximation: ";
+	    cin >> approximation;
 
-      /*
-        update the perturbation and compute the approximation to one
-        ------------------------------------------------------------
-      */
-          seps /= 2;
-          appone = one + seps;
+	    cout << "The absolute error is: " << absoluteError(actual, approximation) << endl;
 
-      /*
-        do the comparison and if small enough, break out of the loop
-        and return contorl the the calling code
-        ---------------------------------------
-      */	
-          if(abs(appone - one) == 0.0)
-            return;
-        }
+	    return 0;
+    }
 
-      /*
-        if the code gets to this point, there is a bit of trouble
-        ---------------------------------------------------------
-      */
-
-        cout << "The loop limit has been exceeded" << endl;
-      }
-
-      int main(int argc, char** argv)
-      {
-        float sval;
-        int ipow;
-
-        smaceps(sval, ipow);
-        cout << ipow << " " << sval << endl;
-      }
-
-**Last Modified:** September/2018
+**Last Modified:** December/2018
