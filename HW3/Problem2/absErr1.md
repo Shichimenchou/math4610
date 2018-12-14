@@ -12,7 +12,22 @@
 
 **Output:** This routine returns a double value: absolute error between them using the oneNorm
 
-**Usage/Example:** 
+**Usage/Example:** The following lines of code compute in the main function compute give the error for these two vector
+
+	vector<double> x;
+	x.push_back(1.0);
+	x.push_back(1.0);		
+	x.push_back(1.0);
+	vector<double> y;
+	y.push_back(0.2);
+	y.push_back(0.2);
+	y.push_back(0.2);
+
+	cout << absErr1(x, y, 3) << endl;
+	
+The output follows
+
+	2.4
 
 **Implementation/Code:** The following is the code for absErr1 and the main function to run the method
 
@@ -34,66 +49,6 @@
 		return oneNorm(e, length);
 	}
 
-	double absErr2(vector<double> x, vector<double> y, int length)
-	{
-		vector<double> e;
-
-		for(int i = 0; i < length; i++)
-		{
-			e.push_back(x[i] - y[i]);
-		}
-
-		return twoNorm(e, length);
-	}
-
-	double absErrInf(vector<double> x, vector<double> y, int length)
-	{
-		vector<double> e;
-
-		for(int i = 0; i < length; i++)
-		{
-			e.push_back(x[i] - y[i]);
-		}
-
-		return infNorm(e, length);
-	}
-
-	double relErr1(vector<double> x, vector<double> y, int length)
-	{
-		vector<double> e;
-
-		for(int i = 0; i < length; i++)
-		{
-			e.push_back(x[i] - y[i]);
-		}
-
-		return (oneNorm(e, length) / oneNorm(x, length));
-	}
-
-	double relErr2(vector<double> x, vector<double> y, int length)
-	{
-		vector<double> e;
-
-		for(int i = 0; i < length; i++)
-		{
-			e.push_back(x[i] - y[i]);
-		}
-
-		return (twoNorm(e, length) / twoNorm(x, length));
-	}
-
-	double relErrInf(vector<double> x, vector<double> y, int length)
-	{
-		vector<double> e;
-
-		for(int i = 0; i < length; i++)
-		{
-			e.push_back(x[i] - y[i]);
-		}
-
-		return (infNorm(e, length) / infNorm(x, length));
-	}
-
 	int main()
 	{
 		vector<double> x;
@@ -102,16 +57,11 @@
 		x.push_back(1.0);
 
 		vector<double> y;
-		y.push_back(0.0);
-		y.push_back(0.0);
-		y.push_back(0.0);
+		y.push_back(0.2);
+		y.push_back(0.2);
+		y.push_back(0.2);
 
 		cout << absErr1(x, y, 3) << endl;
-		cout << absErr2(x, y, 3) << endl;
-		cout << absErrInf(x, y, 3) << endl;
-		cout << relErr1(x, y, 3) << endl;
-		cout << relErr2(x, y, 3) << endl;
-		cout << relErrInf(x, y, 3) << endl;
 
 		return 0;
 	}
