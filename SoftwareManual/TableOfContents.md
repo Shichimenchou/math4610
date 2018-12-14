@@ -71,6 +71,8 @@
    
    [Determinant](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem6/determinant.md)
    
+   [Cholesky Factorization](https://github.com/Shichimenchou/math4610/edit/master/HW4/Problem8/CholeskyFactor.md)
+   
 **Solving Linear Systems**
 
    [Square Guassian Elimination](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem1/GuassianElimination.md)
