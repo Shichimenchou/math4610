@@ -34,42 +34,39 @@ The output follows
 
 **Implementation/Code:** The following is the code for vecMul and the main function to run the method
 
-	  #include <iostream>
-	  #include <vector>
+	#include <iostream>
+	#include <vector>
+	#using namespace std;
 
-	  using namespace std;
+	double dotProd(vector<double> x, vector<double> y, int length)
+	{
+		double sum = 0.0;
 
+		for(int i = 0; i < length; i++)
+		{
+			sum += x[i] * y[i];
+		}
 
+		return sum;
+	}
 
-    double dotProd(vector<double> x, vector<double> y, int length)
-    {
-      double sum = 0.0;
+	int main()
+	{
+		vector<double> x;
+		vector<double> y;
+		x.push_back(1);
+		x.push_back(1);
+		x.push_back(1);
+		x.push_back(1);
+		y.push_back(1);	
+		y.push_back(2);
+		y.push_back(3);
+		y.push_back(4);
+		y.push_back(5);	
 
-      for(int i = 0; i < length; i++)
-      {
-        sum += x[i] * y[i];
-      }
+		cout << dotProd(x, y, 5) << endl;
 
-      return sum;
-    }
-
-	  int main()
-	  {
-	    vector<double> x;
-      vector<double> y;
-      x.push_back(1);
-      x.push_back(1);
-      x.push_back(1);
-      x.push_back(1);
-      y.push_back(1);	
-      y.push_back(2);
-      y.push_back(3);
-      y.push_back(4);
-      y.push_back(5);	
-
-      cout << dotProd(x, y, 5) << endl;
-
-	    return 0;
-	  }
+		return 0;
+	}
 
 **Last Modified: December 2018**
