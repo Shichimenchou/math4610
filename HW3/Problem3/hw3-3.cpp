@@ -51,14 +51,14 @@ double dotProd(vector<double> x, vector<double> y, int length)
 	return sum;
 }
 
-vector<vector<double>> outerProd(vector<double> x, vector<double> y, int length)
+vector<vector<double>> outerProd(vector<double> x, vector<double> y, int xlength, int ylength)
 {
 	vector<vector<double>> ans;
 
-	for(int i = 0; i < length; i++)
+	for(int i = 0; i < xlength; i++)
 	{
 		vector<double> row;
-		for(int j = 0; j < length; j++)
+		for(int j = 0; j < ylength; j++)
 		{
 			row.push_back(x[i] * y[i]);
 		}
