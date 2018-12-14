@@ -36,7 +36,7 @@ The output follows
     5.0
     5.0
 
-**Implementation/Code:** The following is the code for vecMul and the main function to run the method
+**Implementation/Code:** The following is the code for vecScalMul and the main function to run the method
 
 	  #include <iostream>
 	  #include <vector>
