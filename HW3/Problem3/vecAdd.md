@@ -14,7 +14,7 @@
 
 **Usage/Example:** The following lines of code compute in the main function compute give the error for these two vector
 
-	vector<double> x;
+    vector<double> x;
     vector<double> y;	
     x.push_back(1);
     x.push_back(1);
@@ -36,10 +36,10 @@
 The output follows
 
 	2
-  2
-  2
-  2
-  2
+  	2
+  	2
+  	2
+  	2
 
 **Implementation/Code:** The following is the code for relErr1 and the main function to run the method
 
