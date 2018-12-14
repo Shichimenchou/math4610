@@ -1,6 +1,6 @@
 # Math 4610 Fundamentals of Computational Mathematics Software Manual
 
-**Routine Name:**           hw2-1-abs
+**Routine Name:**           absoluteError
 
 **Author:** Phillip Linson
 
@@ -29,7 +29,7 @@ This will yield the following output
 
     The absolute error is: 1.2
 
-**Implementation/Code:** The following is the code for smaceps()
+**Implementation/Code:** The following is the code for hw2-2-abs
 
     #include <iostream>
     #include <cmath>
