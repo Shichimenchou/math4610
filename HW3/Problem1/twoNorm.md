@@ -1,12 +1,12 @@
 # Math 4610 Fundamentals of Computational Mathematics Software Manual
 
-**Routine Name:**           bisection
+**Routine Name:**           twoNorm
 
 **Author:** Phillip Linson
 
 **Language:** C++. The code can be compiled using g++.
 
-**Description/Purpose:** This routine will compute the 1-norm of a vector
+**Description/Purpose:** This routine will compute the 2-norm of a vector
 
 **Input:** The inputs a vector of doubles v, and an integer length of v
 
