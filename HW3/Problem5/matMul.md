@@ -10,7 +10,7 @@
 
 **Input:** The inputs two vector of vector of doubles, A and B, and the dimension of matrix A, n and m
 
-**Output:** This routine returns a matrix, the product of the two matricese
+**Output:** This routine returns a matrix, the product of the two matrices
 
 **Usage/Example:** The following lines of code compute the produt of the matrices, and the main function tests the method
 	
