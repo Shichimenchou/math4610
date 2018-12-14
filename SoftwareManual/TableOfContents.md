@@ -37,7 +37,7 @@
    
    [Vector Subtract](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/vecSub.md)
    
-   [Vector-Scalar Multiply](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/scalVecProd.md)
+   [Vector-Scalar Multiply](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/vecScalMul.md)
    
    [Dot Product](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/dotProd.md)
    
