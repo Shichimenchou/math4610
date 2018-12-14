@@ -105,8 +105,81 @@ vector<vector<double>> matMul(vector<vector<double>> A, vector<vector<double>> B
 
 int main()
 {
+	vector<vector<double>> A;
 	
-
+	for(int i = 0; i < 3; i++)
+	{
+		vector<double> row;
+		for(int j = 0; j < 3; j++)
+		{
+			row.push_back(i + 1);
+		}
+		A.push_back(row);
+	}
+	
+	vector<vector<double>> AplusB = matAdd(A, A, 3, 3);
+	
+	for(int i = 0; i < 3; i++)
+	{
+		for(int j = 0; j < 3; j++)
+		{
+			cout << AplusB[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+	
+	vector<vector<double>> AminusB = matSub(A, A, 3, 3);
+	
+	for(int i = 0; i < 3; i++)
+	{
+		for(int j = 0; j < 3; j++)
+		{
+			cout << AminusB[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+	
+	cout << trace(A, 3) << endl;
+	
+	vector<vector<double>> bA = matScalMul(A, 2, 3, 3);
+	cout << endl;
+	
+	for(int i = 0; i < 3; i++)
+	{
+		for(int j = 0; j < 3; j++)
+		{
+			cout << bA[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+	
+	vector<double> x;
+	x.push_back(1);
+	x.push_back(1);
+	x.push_back(1);
+	
+	vector<double> Ax = matVecMul(A, x, 3, 3);
+	
+	for(int i = 0; i < 3; i++)
+	{
+		cout << Ax[i] << " ";
+	}
+	cout << endl;
+	cout << endl;
+	
+	vector<vector<double>> AA = matMul(A, A, 3, 3);
+	
+	for(int i = 0; i < 3; i++)
+	{
+		for(int j = 0; j < 3; j++)
+		{
+			cout << AA[i][j] << " ";
+		}
+		cout << endl;
+	}
 
 	return 0;
 }
