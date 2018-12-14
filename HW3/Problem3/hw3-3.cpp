@@ -82,9 +82,59 @@ int main()
 	y.push_back(1);
 	y.push_back(1);
 	y.push_back(1);
+	
+	vector<double> xy = vecAdd(x, y, 5);
+	
+	for(int i = 0; i < 5; i++)
+	{
+		cout << xy[i] << " ";
+	}
+	cout << endl;
+	
+	
+	vector<double> xy2 = vecSub(x, y, 5);
+	
+	for(int i = 0; i < 5; i++)
+	{
+		cout << xy2[i] << " ";
+	}
+	cout << endl;
+	
+	double b = 5.0;
+	vector<double> bx = vecScalMul(x, b, 5);
+	
+	for(int i = 0; i < 5; i++)
+	{
+		cout << bx[i] << " ";
+	}
+	cout << endl;
+	
+	vector<double> z;
+	
+	z.push_back(1);	
+	z.push_back(2);
+	z.push_back(3);
+	z.push_back(4);
+	z.push_back(5);	
 
-	cout << dotProd(x, y, 5) << endl;
-	cout << vecSub(x, y, 5)[0] << endl;
+	cout << dotProd(x, z, 5) << endl;
+
+	vector<double> u;
+	vector<double> w;
+	u.push_back(1);
+	u.push_back(1);
+	u.push_back(1);
+	w.push_back(1);
+	w.push_back(2);
+	w.push_back(3);
+	
+	vector<vector<double>> uw = outerProd(u, w, 3);
+	
+	for(size_t i = 0; i < 3; i++)
+	{
+		cout << uw[i][0] << " " << uw[i][1] << " " << uw[i][2] << endl;
+	}
+	
 
 	return 0;
 }
