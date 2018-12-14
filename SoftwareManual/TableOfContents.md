@@ -50,5 +50,19 @@
    [Matrix Frobenius Norm](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem4/frobNormMat.md)
    
    [Matrix Infinity Norm](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem4/infNormMat.md)
+   
+**Matrix Operations**
+
+   [Matrix Addition](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/matAdd.md)
+   
+   [Matrix Subtraction](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/matSub.md)
+   
+   [Trace](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/trace.md)
+   
+   [Matrix Scalar Multiplication](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/matScalMul.md)
+   
+   [Matrix Vector Multiplicaiton](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/matVecMul.md)
+   
+   [Matrix Matrix Multiplication](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem5/matMul.md)
 
 **Last Modified:** September/2017
