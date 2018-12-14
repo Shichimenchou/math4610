@@ -14,6 +14,32 @@
 
 **Usage/Example:** This code from the main function creates an example A and b and prints the solution x
 
+      vector<vector<double>> A;
+      vector<double> row1;vector<double> row2;vector<double> row3; vector<double> row4;
+      row1.push_back(4);row1.push_back(-1);row1.push_back(2);row1.push_back(3);		
+      row2.push_back(0);row2.push_back(-2);row2.push_back(7);row2.push_back(-4);	
+      row3.push_back(0);row3.push_back(0);row3.push_back(6);row3.push_back(5);	
+      row4.push_back(0);row4.push_back(0);row4.push_back(0);row4.push_back(3);
+      A.push_back(row1);A.push_back(row2);A.push_back(row3);A.push_back(row4);
+
+      vector<double> b;
+      b.push_back(20);b.push_back(-7);b.push_back(4);b.push_back(6);
+
+      vector<double> x = backSub(A, b, 4);
+
+      for(int i = 0; i < 4; i++)
+      {
+        cout << x[i] << " "; 
+      }
+      
+The output follows
+
+    3 -4 -1 2
+    
+This solution is correct
+ 
+**Implementation/Code:** The following is the code for backSub and the main function to run the method
+
     #include <iostream>
     #include <vector>
     #include <algorithm>
