@@ -43,5 +43,12 @@
    
    [Outer Product](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem3/outerProd.md)
 
+**Matrix Norms**
+
+   [Matrix 1 Norm](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem4/oneNormMat.md)
+   
+   [Matrix Frobenius Norm](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem4/frobNormMat.md)
+   
+   [Matrix Infinity Norm](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem4/infNormMat.md)
 
 **Last Modified:** September/2017
