@@ -54,9 +54,6 @@
                   }
                   cout << endl;
             }
-
-            return 0;
-      }
       
 The output follows
 
