@@ -37,11 +37,7 @@
 	
 The output follows
 
-	2
-  	2
-  	2
-  	2
-  	2
+	2 2 2 2 2
 
 **Implementation/Code:** The following is the code for vecAdd and the main function to run the method
 
