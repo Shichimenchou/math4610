@@ -4,7 +4,7 @@
 
    [Single Precision Max Epsilon](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem1/smaceps.md)
    
-   [Double Precision Max Epsilon](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem1/dmaceps.md
+   [Double Precision Max Epsilon](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem1/dmaceps.md)
 
 
 **Root Finding:**
