@@ -1,8 +1,8 @@
 [Problem 1](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem1)
 
-* [Part 1](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem2/smaceps.cpp)
+* [Part 1](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem1/smaceps.cpp)
 
-* [Part 2](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem2/dmaceps.cpp)
+* [Part 2](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem1/dmaceps.cpp)
 
 [Problem 3](https://github.com/Shichimenchou/math4610/blob/master/HW1/Problem3)
 
