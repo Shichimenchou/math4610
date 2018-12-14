@@ -34,40 +34,40 @@ The output follows
 
 **Implementation/Code:** The following is the code for matSub and the main function to run the method
 
-  #include <iostream>
-  #include <vector>
+	  #include <iostream>
+	  #include <vector>
 
-  using namespace std;
+	  using namespace std;
 
-  double trace(vector<vector<double>> A, int n)
-  {
-    double ans = 0.0;
+	  double trace(vector<vector<double>> A, int n)
+	  {
+	    double ans = 0.0;
 
-    for(int i = 0; i < n; i++)
-    {
-      ans += A[i][i];
-    }
+	    for(int i = 0; i < n; i++)
+	    {
+	      ans += A[i][i];
+	    }
 
-    return ans;
-  }
+	    return ans;
+	  }
 
-  int main()
-  {
-    vector<vector<double>> A;
+	  int main()
+	  {
+	    vector<vector<double>> A;
 
-    for(int i = 0; i < 3; i++)
-    {
-      vector<double> row;
-      for(int j = 0; j < 3; j++)
-      {
-        row.push_back(i + 1);
-      }
-      A.push_back(row);
-    }
+	    for(int i = 0; i < 3; i++)
+	    {
+	      vector<double> row;
+	      for(int j = 0; j < 3; j++)
+	      {
+		row.push_back(i + 1);
+	      }
+	      A.push_back(row);
+	    }
 
-    cout << trace(A, 3) << endl;
+	    cout << trace(A, 3) << endl;
 
-    return 0;
-  }
+	    return 0;
+	  }
 
 **Last Modified: December 2018**
