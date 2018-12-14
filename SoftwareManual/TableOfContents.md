@@ -18,6 +18,20 @@
    [Relative Error](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem1/hw2-1-rel.md)
    
    [Absolute Error](https://github.com/Shichimenchou/math4610/blob/master/HW2/Problem1/hw2-1-abs.md)
+   
+   [Vector 1 Norm Absolute Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/absErr1.md)
+
+   [Vector 2 Norm Relative Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/relErr1.md)
+ 
+   [Vector 2 Norm Absolute Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/absErr2.md)
+
+   [Vector 1 Norm Relative Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/relErr2.md)
+ 
+   [Vector Infinity Norm Absolute Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/absErrInf.md)
+
+   [Vector Infinity Norm Relative Error](https://github.com/Shichimenchou/math4610/blob/master/HW3/Problem2/relErrInf.md)
+
+
 
 
 **Last Modified:** September/2017
