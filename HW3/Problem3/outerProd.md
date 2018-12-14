@@ -35,22 +35,22 @@ The output follows
 	#using namespace std;
 
 
-   vector<vector<double>> outerProd(vector<double> x, vector<double> y, int length)
-   {
-      vector<vector<double>> ans;
-
-	    for(int i = 0; i < length; i++)
-	    {
+   	vector<vector<double>> outerProd(vector<double> x, vector<double> y, int length)
+   	{
+		vector<vector<double>> ans;
+		
+		for(int i = 0; i < length; i++)
+		{
 		      vector<double> row;
 		      for(int j = 0; j < length; j++)
-		  {
-			row.push_back(x[i] * y[i]);
+		      {
+		      	row.push_back(x[i] * y[i]);
+		      }
+		      ans.push_back(row);
 		}
-		ans.push_back(row);
-	}
 
-	return ans;
-  }
+		return ans;
+	}
 
 	int main()
 	{
