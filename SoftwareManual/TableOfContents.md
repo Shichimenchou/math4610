@@ -73,6 +73,8 @@
    
 **Solving Linear Systems**
 
-   [Guassian Elimination](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem1/GuassianElimination.md)
+   [Square Guassian Elimination](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem1/GuassianElimination.md)
+   
+   [General Guassian Elimination](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem2/GeneralGuassianElimination.md)
 
 **Last Modified:** September/2017
