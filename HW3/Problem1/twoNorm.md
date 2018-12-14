@@ -23,7 +23,7 @@ The output of running this code is below:
 	
 This is correctly rouded at the 5th decimal place.
 
-**Implementation/Code:** The following is the code for oneNorm and the main function to run the code
+**Implementation/Code:** The following is the code for twoNorm and the main function to run the code
 
 	
 	double twoNorm(vector<double> v, int length)
