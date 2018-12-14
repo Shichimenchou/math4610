@@ -10,9 +10,9 @@
 
 **Input:** The inputs a vector of vector of doubles, A, and the dimensions of the matrix, n and m, and the scalar
 
-**Output:** This routine returns a double, the trace of the matrix
+**Output:** This routine returns a matrix, the product of the matrix and the scalar
 
-**Usage/Example:** The following lines of code compute the trace of a matrix, and the main function tests the method
+**Usage/Example:** The following lines of code compute the produt of a matrix and a scalar, and the main function tests the method
 	
     vector<vector<double>> A;
 
@@ -39,54 +39,56 @@
 	
 The output follows
 
-    6
+    2 2 2
+    4 4 4
+    6 6 6
 
-**Implementation/Code:** The following is the code for matSub and the main function to run the method
+**Implementation/Code:** The following is the code for matScalMul and the main function to run the method
 
-  #include <iostream>
-  #include <vector>
+	  #include <iostream>
+	  #include <vector>
 
-  using namespace std;
+	  using namespace std;
 
-  vector<vector<double>> matScalMul(vector<vector<double>> A, double b, int n, int m)
-  {
-    for(int i = 0; i < n; i++)
-    {
-      for(int j = 0; j < m; j++)
-      {
-        A[i][j] = A[i][j] * b;
-      }
-    }
+	  vector<vector<double>> matScalMul(vector<vector<double>> A, double b, int n, int m)
+	  {
+	    for(int i = 0; i < n; i++)
+	    {
+	      for(int j = 0; j < m; j++)
+	      {
+		A[i][j] = A[i][j] * b;
+	      }
+	    }
 
-    return A;
-  }
+	    return A;
+	  }
 
-  int main()
-  {
-    vector<vector<double>> A;
+	  int main()
+	  {
+	    vector<vector<double>> A;
 
-    for(int i = 0; i < 3; i++)
-    {
-      vector<double> row;
-      for(int j = 0; j < 3; j++)
-      {
-        row.push_back(i + 1);
-      }
-      A.push_back(row);
-    }
+	    for(int i = 0; i < 3; i++)
+	    {
+	      vector<double> row;
+	      for(int j = 0; j < 3; j++)
+	      {
+		row.push_back(i + 1);
+	      }
+	      A.push_back(row);
+	    }
 
-    vector<vector<double>> bA = matScalMul(A, 2, 3, 3);
+	    vector<vector<double>> bA = matScalMul(A, 2, 3, 3);
 
-    for(int i = 0; i < 3; i++)
-    {
-      for(int j = 0; j < 3; j++)
-      {
-        cout << bA[i][j] << " ";
-      }
-      cout << endl;
-    }
+	    for(int i = 0; i < 3; i++)
+	    {
+	      for(int j = 0; j < 3; j++)
+	      {
+		cout << bA[i][j] << " ";
+	      }
+	      cout << endl;
+	    }
 
-    return 0;
-  }
+	    return 0;
+	  }
 
 **Last Modified: December 2018**
