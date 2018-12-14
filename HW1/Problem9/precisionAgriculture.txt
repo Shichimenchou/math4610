@@ -5,4 +5,4 @@ computer for precise accuracy. This allows the vehicle to scan for chemical info
 scanner and map that to precise location data, allowing the vehicle to adjust how much fertilizer, pesticide,
 and seed it uses in each spot for maximum yield.
 
-http://lubbock.tamu.edu/files/2011/10/precisionfarm_1.pdf
+Stephen Searcy. "Precision Farming: A New Approach to Crop Management." Texas Agriculture Extension Service. http://lubbock.tamu.edu/files/2011/10/precisionfarm_1.pdf
