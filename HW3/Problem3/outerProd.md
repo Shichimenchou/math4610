@@ -14,19 +14,12 @@
 
 **Usage/Example:** The following lines of code compute in the main function the outer product of two vectors
 
-    vector<double> x;
-    vector<double> y;
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);
-    x.push_back(1);
-    y.push_back(1);	
-    y.push_back(2);
-    y.push_back(3);
-    y.push_back(4);
-    y.push_back(5);	
-
-    cout << outerProd(x, y, 5) << endl;
+	vector<vector<double>> uw = outerProd(u, w, 3);
+	
+	for(size_t i = 0; i < 3; i++)
+	{
+		cout << uw[i][0] << " " << uw[i][1] << " " << uw[i][2] << endl;
+	}
 	
 The output follows
 
@@ -59,20 +52,12 @@ The output follows
 
 	int main()
 	{
-		vector<double> x;
-		vector<double> y;
-		x.push_back(1);
-		x.push_back(1);
-		x.push_back(1);
-		x.push_back(1);
-		y.push_back(1);	
-		y.push_back(2);
-		y.push_back(3);
-		y.push_back(4);
-		y.push_back(5);	
-
-		
-
+		vector<vector<double>> uw = outerProd(u, w, 3);
+	
+		for(size_t i = 0; i < 3; i++)
+		{
+			cout << uw[i][0] << " " << uw[i][1] << " " << uw[i][2] << endl;
+		}
 		return 0;
 	}
 
