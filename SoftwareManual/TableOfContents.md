@@ -82,5 +82,7 @@
    [Forward Substitution](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem3/forwardSub.md)
    
    [Back Substitution](https://github.com/Shichimenchou/math4610/blob/master/HW4/Problem4/backSub.md)
+   
+   [Jacobi Iteration](https://github.com/Shichimenchou/math4610/blob/master/HW5/Problem3/JacobiIter.md)
 
 **Last Modified:** December/2018
