@@ -32,7 +32,7 @@ The output follows
 
   	17.3205
 
-**Implementation/Code:** The following is the code for dotProd and the main function to run the method
+**Implementation/Code:** The following is the code for frobNormMat and the main function to run the method
 
 	#include <iostream>
 	#include <vector>
