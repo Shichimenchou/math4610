@@ -40,8 +40,6 @@ The output follows
 
 	using namespace std;
 
-	
-
 	double oneNormMat(vector<vector<double>> A, int n, int m)
 	{
 		double ans = 0.0;
