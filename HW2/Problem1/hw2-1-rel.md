@@ -20,40 +20,40 @@ will produce an **./a.out** file.
 
 **Usage/Example:**
 
-This main code asks for an actual value and an approximation, then returns the absolute error. For instance, type 10.0 and 8.8 when prompted
+This main code asks for an actual value and an approximation, then returns the relative error. For instance, type 10.0 and 8.8 when prompted
 
-    Enter the actual value: 10.0
-    Enter the approximation: 8.8
+	Enter the actual value: 10.0
+	Enter the approximation: 8.8
     
 This will yield the following output
 
-    The absolute error is: 1.2
+	The absolute error is: 0.12
 
 **Implementation/Code:** The following is the code for smaceps()
+	
+	#include <iostream>
+	#include <cmath>
 
-    #include <iostream>
-    #include <cmath>
+	using namespace std;
 
-    using namespace std;
+	double relativeError(double actual, double relative)
+	{
+		return abs(actual - relative) / actual;
+	}
 
-    double absoluteError(double actual, double approximation)
-    {
-	    return abs(actual - approximation);
-    }
+	int main()
+	{
+		double actual;
+		cout << "Enter the actual value: ";
+		cin >> actual;
 
-    int main()
-    {
-	    double actual;
-	    cout << "Enter the actual value: ";
-	    cin >> actual;
+		double approximation;
+		cout << "Enter the approximation: ";
+		cin >> approximation;
 
-	    double approximation;
-	    cout << "Enter the approximation: ";
-	    cin >> approximation;
+		cout << "The relative error is: " << relativeError(actual, approximation) << endl;
 
-	    cout << "The absolute error is: " << absoluteError(actual, approximation) << endl;
-
-	    return 0;
-    }
+		return 0;
+	}
 
 **Last Modified:** December/2018
